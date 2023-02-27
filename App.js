@@ -23,11 +23,16 @@ export default function App() {
       
       <Text>Sugár</Text>
       <TextInput style={styles.inputField}
-      onChangeText={(radius) => setRadius(radius)}/>
+      onChangeText={(data) => setRadius(data)}/>
 
       <Text>Magasság</Text>
       <TextInput style={styles.inputField}
-      onChangeText={(height) => setHeight(height)}/>
+      onChangeText={(data) => setHeight(data)}/>
+
+
+      <Text>Térfogat</Text>
+      <TextInput style={styles.inputField}
+      value={volume}/>
 
       <TouchableHighlight
       style={styles.button}
